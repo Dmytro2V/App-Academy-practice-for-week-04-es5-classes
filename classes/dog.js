@@ -1,4 +1,4 @@
-class Dog {
+/*class Dog {
   constructor(name, age) {
     this.name = name;
     this.age = age;
@@ -11,6 +11,17 @@ class Dog {
   static diet() {
     return "carnivore";
   }
+}*/
+// es5 refactoring:
+function Dog (name, age) {
+    this.name = name;
+    this.age = age;
+  };
+Dog.prototype.bark = function() {
+  console.log("Bark");
+}
+Dog.diet = function() {
+  return "carnivore";
 }
 
 /****************************************************************************/
